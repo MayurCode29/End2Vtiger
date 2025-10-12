@@ -1,0 +1,60 @@
+package pages;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
+
+public class AccountsPage {
+	
+	WebDriver driver;
+	Alert alert;
+	
+	public AccountsPage(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+
+	
+	By AccountsTab=By.xpath("//*[text()='Accounts']");
+	By SaveButton=By.xpath("//input[@title='Save [Alt+S]']");
+	
+	 
+	public void clickOnAccounts()
+	{
+		driver.findElement(AccountsTab).click();
+	}
+	
+	
+	
+	public void clickOnSave()
+	 {
+		 driver.findElement(SaveButton).click();
+	 }
+	
+	
+	public String getAlertMessage()
+	{
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.alertIsPresent());
+	 
+		alert=driver.switchTo().alert();
+		alert.accept();
+		return alert.getText();
+	}
+	/*public void clickOnAlert()
+	
+	{
+	 driver.switchTo().alert().accept();
+	 
+	} */
+
+
+
+	
+	
+	
+}

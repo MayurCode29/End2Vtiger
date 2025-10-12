@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="VTigerProject" tests="3" started="3" failures="1" errors="0" ignored="0">
+  <testsuite name="runners.TestRunner" time="10.357">
+    <testsuite name="Account creation" time="6.086">
+      <testcase name="Clicking on save without filling mandatory field details" classname="Account creation" time="6.086">
+        <failure>
+          <expected>Missing required fields:
+Account Name</expected>
+          <actual>Account Name cannot be empty</actual>
+          junit.framework.ComparisonFailure: expected:&lt;[Missing required fields:
+Account Name]&gt; but was:&lt;[Account Name cannot be empty]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at stepdefinitions.AccountsSteps.popup_should_appear(AccountsSteps.java:40)&#13;
+	at ✽.popup should appear(file:///C:/Users/user/NewEclipse/VTigerProject/src/test/resources/features/Accounts.feature:12)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="User Login" time="4.268">
+      <testcase name="Login with valid username and password" classname="User Login" time="2.666"/>
+      <testcase name="Login with invalid username and invalid password" classname="User Login" time="1.602"/>
+    </testsuite>
+  </testsuite>
+</testrun>

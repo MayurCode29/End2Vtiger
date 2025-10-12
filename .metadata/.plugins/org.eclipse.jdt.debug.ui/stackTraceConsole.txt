@@ -1,0 +1,10 @@
+io.cucumber.junit.UndefinedStepException: The step 'user user enters username "admin" and password "admin"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("user user enters username {string} and password {string}")
+public void user_user_enters_username_and_password(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

@@ -1,0 +1,30 @@
+package stepdefinitions;
+
+public class LoginSteps {
+	
+	@Given("the user is on login page")
+	public void the_user_is_on_login_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("user user enters username and password")
+	public void user_user_enters_username_and_password() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("clicks on Login button")
+	public void clicks_on_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("user should be on homepage")
+	public void user_should_be_on_homepage() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+}

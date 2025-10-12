@@ -1,0 +1,45 @@
+package stepdefinitions;
+
+import org.openqa.selenium.WebDriver;
+
+import base.BaseClass;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import junit.framework.Assert;
+import pages.AccountsPage;
+
+public class AccountsSteps extends BaseClass {
+	
+	
+	AccountsPage accounts;
+	
+	
+	
+	@Given("the user is on Accounts page")
+	public void the_user_is_on_accounts_page() throws InterruptedException {
+		
+		Thread.sleep(3000);
+		accounts= new AccountsPage(driver);
+		accounts.clickOnAccounts();
+		
+	}
+	@When("user user enters clicks on save")
+	public void user_user_enters_clicks_on_save() throws InterruptedException {
+	
+		accounts.clickOnSave();
+		
+	    
+	}
+
+	@Then("popup should appear")
+	public void popup_should_appear() {
+		
+		String alertText=accounts.getAlertMessage();
+		System.out.println("Alert Text: " + alertText);
+		Assert.assertEquals(alertText, "Account Name cannot be empty");
+		
+	    
+	}
+
+}

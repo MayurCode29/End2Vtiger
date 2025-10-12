@@ -1,0 +1,27 @@
+package runners;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.testng.CucumberOptions;
+import io.cucumber.junit
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+    features = "src/test/resources/features/Login.feature",    
+    glue = {"stepdefinitions"},       
+    plugin = {
+        "pretty",                                 
+        "html:target/cucumber-reports/cucumber.html", 
+        "json:target/cucumber-reports/Cucumber.json",
+        "junit:target/cucumber-reports/Cucumber.xml" 
+    },
+          
+    dryRun = false         
+        
+)
+
+public class TestRunner {
+	
+	
+
+}
