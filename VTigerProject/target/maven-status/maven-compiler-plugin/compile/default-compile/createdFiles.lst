@@ -1,0 +1,7 @@
+base\BaseClass.class
+pages\LoginPage.class
+pages\ContactsPage.class
+pages\HomePage.class
+pages\AccountsPage.class
+pages\LeadsPage.class
+utils\WaitUtils.class

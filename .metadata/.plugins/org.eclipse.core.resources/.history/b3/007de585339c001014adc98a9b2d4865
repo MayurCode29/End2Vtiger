@@ -1,9 +1,0 @@
-Feature: User Login
-Scenario:Login with valid username and password
-
-Given the user is on login page
-When user user enters username and password
-And clicks on Login button
-Then user should be on homepage
-
-

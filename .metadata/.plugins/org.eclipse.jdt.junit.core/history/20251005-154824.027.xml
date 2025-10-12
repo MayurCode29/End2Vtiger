@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="VTigerProject" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="runners.TestRunner" time="7.898">
-    <testsuite name="User Login" time="7.898">
-      <testcase name="Login with valid username and password" classname="User Login" time="6.247"/>
-      <testcase name="Login with invalid username and invalid password" classname="User Login" time="1.651"/>
-    </testsuite>
-  </testsuite>
-</testrun>
