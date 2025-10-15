@@ -2,6 +2,9 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import base.BaseClass;
 
@@ -11,27 +14,32 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
-    By username = By.xpath("//input[@name='user_name']");
-    By password = By.xpath("//input[@name='user_password']");
-    By loginButton = By.xpath("//input[@name='Login']");
-    By errorMessage=By.xpath("//*[contains(text(),' a valid username and password. ')]");
+    @FindBy(xpath="//input[@name='user_name']")
+    WebElement username;
+    @FindBy(xpath="//input[@name='user_password']")
+    WebElement password;
+    @FindBy(xpath="//input[@name='Login']")
+    WebElement loginButton;
+    @FindBy(xpath="//*[contains(text(),' a valid username and password. ')]")
+    WebElement errorMessage;
 
     public void enterUsername(String user) {
-        driver.findElement(username).sendKeys(user);
+        username.sendKeys(user);
     }
 
     public void enterPassword(String pass) {
-        driver.findElement(password).sendKeys(pass);
+        password.sendKeys(pass);
     }
 
     public void clickLogin() {
-        driver.findElement(loginButton).click();
+        loginButton.click();
     }
     
     public boolean isErrorMessageDisplayed() {
-        return driver.findElement(errorMessage).isDisplayed();
+        return errorMessage.isDisplayed();
 }
 
 	

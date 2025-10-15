@@ -1,0 +1,39 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import base.BaseClass;
+
+public class LoginPage {
+	
+    WebDriver driver= BaseClass.getDriver();;
+
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    By username = By.xpath("//input[@name='user_name']");
+    By password = By.xpath("//input[@name='user_password']");
+    By loginButton = By.xpath("//input[@name='Login']");
+    By errorMessage=By.xpath("//*[contains(text(),' a valid username and password. ')]");
+
+    public void enterUsername(String user) {
+        driver.findElement(username).sendKeys(user);
+    }
+
+    public void enterPassword(String pass) {
+        driver.findElement(password).sendKeys(pass);
+    }
+
+    public void clickLogin() {
+        driver.findElement(loginButton).click();
+    }
+    
+    public boolean isErrorMessageDisplayed() {
+        return driver.findElement(errorMessage).isDisplayed();
+}
+
+	
+	}
+
