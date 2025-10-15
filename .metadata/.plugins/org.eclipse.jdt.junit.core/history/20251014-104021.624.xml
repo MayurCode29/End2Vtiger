@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="VTigerProject" tests="5" started="5" failures="0" errors="5" ignored="0">
+  <testsuite name="runners.TestRunner" time="4.824">
+    <testsuite name="Account creation" time="1.607">
+      <testcase name="Clicking on save without filling mandatory field details" classname="Account creation" time="1.607">
+        <error>java.lang.RuntimeException: URL not found in config file!&#13;
+	at base.BaseClass.launchBrowser(BaseClass.java:45)&#13;
+	at stepdefinitions.Hooks.setUp(Hooks.java:11)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="User Login" time="3.213">
+      <testcase name="Login with valid username and password" classname="User Login" time="0.795">
+        <error>java.lang.RuntimeException: URL not found in config file!&#13;
+	at base.BaseClass.launchBrowser(BaseClass.java:45)&#13;
+	at stepdefinitions.Hooks.setUp(Hooks.java:11)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login with invalid username and invalid password #1" classname="User Login" time="0.806">
+        <error>java.lang.RuntimeException: URL not found in config file!&#13;
+	at base.BaseClass.launchBrowser(BaseClass.java:45)&#13;
+	at stepdefinitions.Hooks.setUp(Hooks.java:11)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login with invalid username and invalid password #2" classname="User Login" time="0.8">
+        <error>java.lang.RuntimeException: URL not found in config file!&#13;
+	at base.BaseClass.launchBrowser(BaseClass.java:45)&#13;
+	at stepdefinitions.Hooks.setUp(Hooks.java:11)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login with invalid username and invalid password #3" classname="User Login" time="0.812">
+        <error>java.lang.RuntimeException: URL not found in config file!&#13;
+	at base.BaseClass.launchBrowser(BaseClass.java:45)&#13;
+	at stepdefinitions.Hooks.setUp(Hooks.java:11)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

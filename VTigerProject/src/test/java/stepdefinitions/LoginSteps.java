@@ -17,7 +17,7 @@ public class LoginSteps extends BaseClass {
 	public void the_user_is_on_login_page() {
 		
 		launchBrowser();
-		 driver.get("http://localhost:100/");
+		/* driver.get("http://localhost:100/"); */
 	    
 	}
 

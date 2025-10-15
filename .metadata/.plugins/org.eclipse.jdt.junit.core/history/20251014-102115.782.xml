@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="VTigerProject" tests="5" started="5" failures="0" errors="5" ignored="0">
+  <testsuite name="runners.TestRunner" time="5.564">
+    <testsuite name="Account creation" time="2.4">
+      <testcase name="Clicking on save without filling mandatory field details" classname="Account creation" time="2.4">
+        <error>java.lang.NullPointerException&#13;
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)&#13;
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)&#13;
+	at java.base/java.util.Map.of(Map.java:1353)&#13;
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)&#13;
+	at base.BaseClass.launchBrowser(BaseClass.java:42)&#13;
+	at stepdefinitions.Hooks.setUp(Hooks.java:11)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="User Login" time="3.159">
+      <testcase name="Login with valid username and password" classname="User Login" time="0.788">
+        <error>java.lang.NullPointerException&#13;
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)&#13;
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)&#13;
+	at java.base/java.util.Map.of(Map.java:1353)&#13;
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)&#13;
+	at base.BaseClass.launchBrowser(BaseClass.java:42)&#13;
+	at stepdefinitions.Hooks.setUp(Hooks.java:11)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login with invalid username and invalid password #1" classname="User Login" time="0.805">
+        <error>java.lang.NullPointerException&#13;
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)&#13;
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)&#13;
+	at java.base/java.util.Map.of(Map.java:1353)&#13;
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)&#13;
+	at base.BaseClass.launchBrowser(BaseClass.java:42)&#13;
+	at stepdefinitions.Hooks.setUp(Hooks.java:11)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login with invalid username and invalid password #2" classname="User Login" time="0.797">
+        <error>java.lang.NullPointerException&#13;
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)&#13;
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)&#13;
+	at java.base/java.util.Map.of(Map.java:1353)&#13;
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)&#13;
+	at base.BaseClass.launchBrowser(BaseClass.java:42)&#13;
+	at stepdefinitions.Hooks.setUp(Hooks.java:11)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login with invalid username and invalid password #3" classname="User Login" time="0.769">
+        <error>java.lang.NullPointerException&#13;
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)&#13;
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)&#13;
+	at java.base/java.util.Map.of(Map.java:1353)&#13;
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)&#13;
+	at base.BaseClass.launchBrowser(BaseClass.java:42)&#13;
+	at stepdefinitions.Hooks.setUp(Hooks.java:11)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

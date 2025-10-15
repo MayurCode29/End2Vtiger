@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="21.009" tests="5" skipped="0" failures="1" errors="0">
-<testcase classname="Account creation" name="Clicking on save without filling mandatory field details" time="11.001">
+<testsuite name="Cucumber" time="44.682" tests="5" skipped="0" failures="1" errors="0">
+<testcase classname="Account creation" name="Clicking on save without filling mandatory field details" time="13.384">
 <failure type="junit.framework.ComparisonFailure" message="expected:&lt;[Missing required fields:
 Account Name]&gt; but was:&lt;[Account Name cannot be empty]&gt;">
 <![CDATA[junit.framework.ComparisonFailure: expected:<[Missing required fields:
@@ -20,7 +20,7 @@ When user user enters clicks on save........................................pass
 Then popup should appear....................................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="User Login" name="Login with valid username and password" time="3.273">
+<testcase classname="User Login" name="Login with valid username and password" time="8.106">
 <system-out><![CDATA[
 Given the user is on login page.............................................passed
 When user user enters username "admin" and password "admin".................passed
@@ -28,7 +28,7 @@ And clicks on Login button..................................................pass
 Then user should be on homepage.............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Login" name="Login with invalid username and invalid password - Example #1.1" time="2.282">
+<testcase classname="User Login" name="Login with invalid username and invalid password - Example #1.1" time="7.73">
 <system-out><![CDATA[
 Given the user is on login page.............................................passed
 When user user enters username "admin1" and password "admin1"...............passed
@@ -36,7 +36,7 @@ And clicks on Login button..................................................pass
 Then user should be see error message.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Login" name="Login with invalid username and invalid password - Example #1.2" time="2.2">
+<testcase classname="User Login" name="Login with invalid username and invalid password - Example #1.2" time="7.742">
 <system-out><![CDATA[
 Given the user is on login page.............................................passed
 When user user enters username "admin2" and password "admin2"...............passed
@@ -44,7 +44,7 @@ And clicks on Login button..................................................pass
 Then user should be see error message.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Login" name="Login with invalid username and invalid password - Example #1.3" time="2.08">
+<testcase classname="User Login" name="Login with invalid username and invalid password - Example #1.3" time="7.538">
 <system-out><![CDATA[
 Given the user is on login page.............................................passed
 When user user enters username "admin3" and password "admin3"...............passed
