@@ -1,5 +1,7 @@
 package stepdefinitions;
 
+import org.apache.logging.log4j.Logger;
+
 import base.BaseClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -7,8 +9,10 @@ import io.cucumber.java.en.When;
 import junit.framework.Assert;
 import pages.HomePage;
 import pages.LoginPage;
+import utils.LoggerHelper;
 
 public class LoginSteps extends BaseClass {
+	private static final Logger log = LoggerHelper.getLogger(LoginSteps.class);
 	
 	
 	LoginPage login;
@@ -23,7 +27,7 @@ public class LoginSteps extends BaseClass {
 
 	@When("user user enters username {string} and password {string}")
 	public void user_user_enters_username_and_password(String user, String pass) {
-		
+		log.info("Start login step for user: {}", user);
 		login = new LoginPage(driver);
         login.enterUsername(user);
         login.enterPassword(pass);
@@ -53,6 +57,7 @@ public class LoginSteps extends BaseClass {
 		
 		boolean isErroredMessageDisplayed = login.isErrorMessageDisplayed();
         Assert.assertTrue("a valid username and password", isErroredMessageDisplayed);
+        
 	    
 	}
 

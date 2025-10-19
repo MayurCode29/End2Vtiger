@@ -1,0 +1,34 @@
+package stepdefinitions;
+
+import base.BaseClass;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LeadsSteps extends BaseClass{
+	
+	LeadsSteps leads;
+	
+	
+	@Given("the user is on leads page")
+	public void the_user_is_on_leads_page() {
+	    
+	}
+
+	@When("enters name in first name field")
+	public void enters_name_in_first_name_field() {
+	    
+	}
+
+	@When("clicks on search")
+	public void clicks_on_search() {
+	    
+	}
+
+	@Then("user should see member with that name")
+	public void user_should_see_member_with_that_name() {
+	    
+	}
+
+
+}

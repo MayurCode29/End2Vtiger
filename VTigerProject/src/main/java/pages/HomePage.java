@@ -5,6 +5,8 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -14,12 +16,16 @@ public class HomePage {
 	
 	WebDriver driver;
 	WaitUtils waitUtils;
+	
+	@FindBy(xpath="//*[text()='Logout']")
+	WebElement Logout;
     
-    private By Logout = By.xpath("//*[text()='Logout']");
+    
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
         this.waitUtils = new WaitUtils(driver);
+        PageFactory.initElements(driver, this);
     }
 
     public boolean isLogoutDisplayed() {
@@ -29,7 +35,7 @@ public class HomePage {
     	
     	waitUtils.waitForVisibility(Logout, 10);
 
-        return driver.findElement(Logout).isDisplayed();
+        return Logout.isDisplayed();
     }
 }
 

@@ -1,0 +1,9 @@
+package stepdefinitions;
+
+import base.BaseClass;
+
+public class LeadsSteps extends BaseClass{
+	
+	Leadspage leads;
+
+}

@@ -20,9 +20,10 @@ public class WaitUtils {
     
     
 
-	public WebElement waitForVisibility(By locator, int timeInSeconds) {
+	public WebElement waitForVisibility(WebElement element, int timeInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return wait.until(ExpectedConditions.visibilityOf(element));
+       
     }
 	
 	
@@ -30,5 +31,9 @@ public class WaitUtils {
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
 	    return wait.until(ExpectedConditions.alertIsPresent());
 	}
+
+
+
+	
 
 }

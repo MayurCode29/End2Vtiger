@@ -1,0 +1,4 @@
+2025-10-19 13:49:58.617 [main] INFO  LoginSteps - Start login step for user: admin3
+2025-10-19 13:49:58.618 [main] INFO  LoginPage - Entering username: admin3
+2025-10-19 13:49:58.716 [main] INFO  LoginPage - Entering password
+2025-10-19 13:49:58.726 [main] INFO  LoginPage - Clicking login button
