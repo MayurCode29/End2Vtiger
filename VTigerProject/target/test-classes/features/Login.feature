@@ -1,3 +1,4 @@
+@Regression
 Feature: User Login
 Background:
 Given the user is on login page

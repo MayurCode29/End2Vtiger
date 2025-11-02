@@ -44,8 +44,8 @@ public class LoginSteps extends BaseClass {
 	public void user_should_be_on_homepage() {
 		
 		homePage = new HomePage(driver);
-        boolean isLogoutButtonDisplayed = homePage.isLogoutDisplayed();
-        Assert.assertTrue("Logout", isLogoutButtonDisplayed);
+        String isLogoutButtonDisplayed = homePage.isLogoutDisplayed();
+        Assert.assertEquals(isLogoutButtonDisplayed,"Logout");
         
 
         // Optional: close browser after test
@@ -55,8 +55,8 @@ public class LoginSteps extends BaseClass {
 	@Then("user should be see error message")
 	public void user_should_be_see_error_message() {
 		
-		boolean isErroredMessageDisplayed = login.isErrorMessageDisplayed();
-        Assert.assertTrue("a valid username and password", isErroredMessageDisplayed);
+		String isErroredMessageDisplayed = login.isErrorMessageDisplayed();
+        Assert.assertEquals(isErroredMessageDisplayed,"User Log-in9");
         
 	    
 	}
